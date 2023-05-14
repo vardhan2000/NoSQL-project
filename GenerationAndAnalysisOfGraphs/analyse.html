@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>D3 Graph</title>
+  <style>
+    .node {
+      stroke: #fff;
+      stroke-width: 1.5px;
+    }
+    .link {
+      stroke: #999;
+      stroke-opacity: 0.6;
+    }
+    .highlight {
+      stroke: red !important;
+      stroke-width: 3px !important;
+    }
+    .node-label {
+      font-size: 12px;
+      text-anchor: middle;
+      dominant-baseline: central;
+      pointer-events: none;
+    }
+    .link-label {
+      font-size: 10px;
+      font-weight: bold;
+      fill: #666;
+      pointer-events: none;
+      text-anchor: middle;
+      dominant-baseline: central;
+    }
+  </style>
+</head>
+<body>
+    <div style="display: flex; ">
+  <svg id="graph-svg"></svg>
+    <p id="text" style="margin-top: 200px;"></p>
+</div>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="jsnetworkx.js"></script>
+  <script src="analysisScript.js"></script>
+</body>
+</html>
